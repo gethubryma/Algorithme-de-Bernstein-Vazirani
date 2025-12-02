@@ -53,7 +53,7 @@ $$
 ### Étapes du protocole
 
 1. Allouer (n) qubits de données et un qubit ancilla.
-2. Appliquer une porte **X** sur l’ancilla pour l’initialiser en (|1\rangle).
+2. Appliquer une porte **X** sur l’ancilla pour l’initialiser en $(|1\rangle)$.
 3. Appliquer une porte **Hadamard** sur tous les qubits.
 4. Appliquer l’oracle, sous forme d’une suite de portes **CNOT** contrôlées.
 5. Appliquer une seconde porte **Hadamard** sur les qubits de données.
