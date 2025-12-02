@@ -2,7 +2,6 @@
 
 # TD2 – Algorithme de Bernstein-Vazirani
 
-**Informatique Quantique – UVSQ**
 
 Ce projet présente la construction d’un oracle quantique générique et l’implémentation complète de l’algorithme de Bernstein-Vazirani. Il inclut la génération d’une matrice unitaire représentant un oracle, l’exécution de l’algorithme sur un simulateur quantique et l’encodage d’un oracle personnalisable permettant de retrouver un bitstring secret en une seule requête.
 
