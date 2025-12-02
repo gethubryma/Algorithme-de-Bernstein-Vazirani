@@ -7,13 +7,13 @@ Ce projet présente la construction d’un oracle quantique générique et l’i
 
 ---
 
-## ## 1. Construction d’un oracle quantique générique
+## 1. Construction d’un oracle quantique générique
 
 Un oracle quantique réalise la transformation suivante :
 
-[
+$$
 |x\rangle |y\rangle \longrightarrow |x\rangle |y \oplus f(x)\rangle
-]
+$$
 
 avec :
 
@@ -23,9 +23,9 @@ avec :
 
 La matrice unitaire (U) associée à cet oracle est explicitement construite sous la forme d’une matrice de permutation de dimension :
 
-[
+$$
 2^{n+m} \times 2^{n+m}
-]
+$$
 
 L’implémentation repose sur :
 
@@ -34,9 +34,9 @@ L’implémentation repose sur :
 * la mise à jour de la matrice en plaçant un 1 à la position correcte,
 * la vérification de l’unitarité via :
 
-[
+$$
 U \cdot U^{T} = I
-]
+$$
 
 Cette méthode garantit une représentation fidèle de la transformation définie par l’oracle.
 
@@ -46,9 +46,9 @@ Cette méthode garantit une représentation fidèle de la transformation défini
 
 Cet algorithme permet d’extraire un bitstring secret (s) définissant la fonction :
 
-[
+$$
 f(x) = s \cdot x \pmod{2}
-]
+$$
 
 ### Étapes du protocole
 
@@ -98,8 +98,4 @@ Le projet met en œuvre :
 * la création d’un oracle personnalisable pour n’importe quel secret,
 * la vérification expérimentale du fonctionnement du circuit quantique.
 
-Ce travail illustre la capacité de l’algorithme de Bernstein-Vazirani à retrouver un secret en une seule requête, démontrant l’avantage quantique par rapport aux méthodes classiques qui nécessitent (O(n)) évaluations.
 
----
-
-Si une version anglaise, PDF ou enrichie avec des blocs de code formatés est souhaitée, elle peut être fournie.
