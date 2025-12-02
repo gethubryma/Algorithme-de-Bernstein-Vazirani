@@ -85,7 +85,7 @@ Les expériences réalisées montrent que :
 * pour un secret personnalisé (exemple : `25`), l’état mesuré est `100111`,
 * en retirant le bit ancilla, le bitstring secret reconstitué est `11001`, correspondant à la valeur 25.
 
-Les sorties observées correspondent parfaitement aux valeurs attendues, validant la construction de l’oracle et le fonctionnement de l’algorithme.
+Les sorties observées correspondent aux valeurs attendues, validant la construction de l’oracle et le fonctionnement de l’algorithme.
 
 ---
 
